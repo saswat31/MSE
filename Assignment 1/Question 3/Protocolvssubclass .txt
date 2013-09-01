@@ -1,18 +1,32 @@
 PROTOCOL
 
-A protocol is a group of related properties and methods that can be opt by any class. They are more flexible than a normal class interface, since they let you reuse a single API declaration in completely unrelated classes. This makes it possible to represent horizontal relationships on top of an existing class hierarchy.
+A protocol is a group of related properties and methods that can be opt by any class. They are more flexible 
+than a normal class interface, since they let you reuse a single API declaration in completely unrelated classes.
+This makes it possible to represent horizontal relationships on top of an existing class hierarchy.
 
-A protocol declares a programmatic interface that any class may choose to implement. Protocols make it possible for two classes distantly related by inheritance to communicate with each other to accomplish a certain goal. They thus offer an alternative to subclassing. Any class that can provide behavior useful to other classes may declare a programmatic interface for vending that behavior anonymously. Any other class may choose to adopt the protocol and implement one or more of its methods, thereby making use of the behavior. The class that declares a protocol is expected to call the methods in the protocol if they are implemented by the protocol adopter. 
+A protocol declares a programmatic interface that any class may choose to implement. Protocols make it possible
+for two classes distantly related by inheritance to communicate with each other to accomplish a certain goal. They 
+thus offer an alternative to subclassing. Any class that can provide behavior useful to other classes may declare a 
+programmatic interface for vending that behavior anonymously. Any other class may choose to adopt the protocol and 
+implement one or more of its methods, thereby making use of the behavior. The class that declares a protocol is 
+expected to call the methods in the protocol if they are implemented by the protocol adopter. 
 
 
 SUBCLASS
 
-A subclass inherits methods and instance variables from its superclass.A subclass can override a method it inherits from the class it is based on. The class it is based on is called its superclass. If subclassA overrides a method named methodname it inherits from classA.Subclassing is just a subclass of another class and it inherits behavior and members of its parent class.
-For example, we may have a "car" class which has properties that are common to all cars such color, tires, engine, etc. It also has behaviors that are common to all cars such as drive forward, drive backwards, stop, etc.
+A subclass inherits methods and instance variables from its superclass.A subclass can override a method it inherits 
+from the class it is based on. The class it is based on is called its superclass. If subclassA overrides a method 
+named methodname it inherits from classA.Subclassing is just a subclass of another class and it inherits behavior 
+and members of its parent class.
+For example, we may have a "car" class which has properties that are common to all cars such color, tires, engine, 
+etc. It also has behaviors that are common to all cars such as drive forward, drive backwards, stop, etc.
 
-Now for some reason we need to differentiate between different types of cars but  don't want to repeat all those properties and behaviors in each new class so we write subclasses of the "car" class.
+Now for some reason we need to differentiate between different types of cars but  don't want to repeat all those 
+properties and behaviors in each new class so we write subclasses of the "car" class.
 
-So we may have subclasses such as "manual cars", "automatic cars", "convertibles", "electric cars", etc. All of these subclasses have some common traits inherited from the "car" class but will also have some unique characteristics that can be included in the subclass.
+So we may have subclasses such as "manual cars", "automatic cars", "convertibles", "electric cars", etc. All of 
+these subclasses have some common traits inherited from the "car" class but will also have some unique characteristics 
+that can be included in the subclass.
 
 
 
